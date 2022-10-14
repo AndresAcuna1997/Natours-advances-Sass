@@ -31,6 +31,12 @@
     padding: 15px 40px;
   }
 
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 15px 40px;
+  }
+
   &::after {
     content: "";
     display: inline-block;
@@ -46,6 +52,10 @@
 
   &--white::after {
     background-color: $color-white;
+  }
+
+  &--green::after {
+    background-color: $color-primary;
   }
 
   &--animated {
@@ -74,8 +84,7 @@
   }
 
   &:active {
-
-    box-shadow: 0 .5rem 1rem rgba($color-black, $alpha: 0.15);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, $alpha: 0.15);
     transform: translateY(0);
   }
 }
