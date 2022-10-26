@@ -16,6 +16,40 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <div class="navigation">
+      <input
+        type="checkbox"
+        class="navigation__checkbox"
+        name="navy-toggle"
+        id="navy-toggle"
+      />
+      <label class="navigation__button" for="navy-toggle">
+        <span class="navigation__icon"></span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="" class="navigation__link">About Natours</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Your benefits</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Popular tours</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Book now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="header__logo-box">
         <img src="./img/logo-white.png" alt="logo" class="header__logo" />
@@ -174,7 +208,7 @@
                     <p class="card__price-only">only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -204,7 +238,7 @@
                     <p class="card__price-only">only</p>
                     <p class="card__price-value">$497</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -234,7 +268,7 @@
                     <p class="card__price-only">only</p>
                     <p class="card__price-value">$897</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -425,6 +459,45 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
+        </div>
+
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
+            veritatis aliquid accusantium illo ducimus reiciendis nam, soluta
+            nihil. Iusto ullam doloremque nobis fuga rerum excepturi doloribus
+            nam neque dignissimos hic? Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Totam veritatis aliquid accusantium illo ducimus
+            reiciendis nam, soluta nihil. Iusto ullam doloremque nobis fuga
+            rerum excepturi doloribus nam neque dignissimos hic? Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Totam veritatis aliquid
+            accusantium illo ducimus reiciendis nam, soluta nihil. Iusto ullam
+            doloremque nobis fuga rerum excepturi doloribus nam neque
+            dignissimos hic? Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Totam veritatis aliquid accusantium illo ducimus reiciendis
+            nam, soluta nihil.Totam veritatis aliquid accusantium illo ducimus
+            reiciendis nam, soluta nihil. Iusto ullam doloremque nobis fuga
+            rerum excepturi doloribus nam neque dignissimos hic? Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Totam veritatis aliquid
+            accusantium illo ducimus reiciendis nam, soluta nihil.
+          </p>
+          <a href="#" class="btn btn--green">Book now</a>
+        </div>
+      </div>
+    </div>
     <!-- <section class="grid-test">
       <div class="row">
         <div class="col-1-of-2">1</div>
